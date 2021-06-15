@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+.main {
+    display: flex;
+    height: 100vh; 
+    background-color: hsl(185, 75%, 39%);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    width: 328px;
+    height: 375px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.upper-container {
+    height: 140px;
+    width: 350px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+}
+
+.img-sec {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto 28px auto;
+    border: 5px solid white;
+}
+
+.img-sec img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card-body {
+    height: 68px;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.age {
+    padding-left: 3px;
+}
+
+.age,
+.city,
+.stat-name {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+} 
+
+.city {
+    font-size: .8rem;
+    margin-top: 12px;
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    border-top: solid 1px hsl(227, 10%, 80%);
+    height: 89px;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 12px;
+}
+
+.stat-name {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.circles .circle-top,
+.circles .circle-bottom {
+    position: relative;
+    /* overflow: hidden;
+    height: 100vh; */
+}
+
+.circle-top {
+   top: -50%;
+   left: -45%;
+}
+
+.circle-bottom {
+    bottom: -50%;
+    right: -45%;
+}
+
+@media screen and (min-width: 768px) {
+    .circle-top {
+        top: -50%;
+        left: -15%;
+     }
+     
+     .circle-bottom {
+         bottom: -50%;
+         right: -50%;
+     }
+
+     .container {
+         box-shadow: 0 5px 25px  rgb(102, 102, 102);
+     }
+}
